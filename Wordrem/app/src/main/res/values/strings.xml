@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false"> Wordrem</string>
+
+    <string name="action_info" translatable="false">Information</string>
+    <string name="title_activity_test" translatable="false">Test</string>
+    <string name="check" translatable="false">check</string>
+    <string name="word" translatable="false">Word:</string>
+    <string name="enterWord" translatable="false">Enter the word</string>
+    <string name="translation" translatable="false">Translation:</string>
+    <string name="translation_hint" translatable="false">Enter the translation</string>
+    <string name="add" translatable="false">+ Add</string>
+    <string name="train" translatable="false">Train</string>
+    <string name="word_list" translatable="false">Word:</string>
+    <string name="textView" translatable="false">TextView</string>
+    <string name="textView1" translatable="false">TextView</string>
+    <string name="translation_list" translatable="false">Translation:</string>
+    <string name="training" translatable="false">Training</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_blue">#ff056d67</color>
+    <color name="app_soft_blue">#5b038764</color>
+    <color name="app_light_blue">#fa05b6b0</color>
+    <color name="app_wight">#eeeeee</color>
+
+
+</resources>

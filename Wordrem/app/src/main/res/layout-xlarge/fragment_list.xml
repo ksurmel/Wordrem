@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/word"
+            android:textSize="45dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/etWord"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/enterWord"
+            android:textSize="40dp"
+            android:singleLine="true"
+            android:gravity="bottom">
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/translation"
+            android:paddingLeft="5dp"
+            android:textSize="45dp"
+            android:layout_weight="1"
+            android:gravity="center">
+        </TextView>
+        <EditText
+            android:id="@+id/etTranslation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/translation_hint"
+            android:textSize="40dp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:gravity="bottom">
+        </EditText>
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/add"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:background="@color/accent_material_light"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="27dp">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/train"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:id="@+id/btnTrain"
+            android:textSize="27dp"
+            android:layout_weight="1"
+            android:background="@color/accent_material_light"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/accent_material_light"
+        android:layout_margin="5dp">
+
+        <ListView
+            android:layout_marginLeft="2dp"
+            android:background="@color/app_wight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView">
+        </ListView>
+
+    </FrameLayout>
+
+</LinearLayout>
