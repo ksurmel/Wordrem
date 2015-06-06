@@ -99,8 +99,18 @@ public class ListFragment extends Fragment implements LoaderManager.LoaderCallba
         btnTrain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), TestActivity.class);
-                startActivity(intent);
+                cursor = getActivity().getContentResolver().query(WordsContract.WordsEntry.CONTENT_URI, WORDS_COLUMNS_PROJECTION, null, null,
+                        null);
+                if (cursor.moveToFirst()) {
+
+                    Intent intent = new Intent(getActivity(), TestActivity.class);
+                    startActivity(intent);
+                }
+
+                else {
+
+                    Toast.makeText(getActivity(), "You should enter at least one word!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
