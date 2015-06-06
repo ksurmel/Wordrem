@@ -239,6 +239,7 @@ public class ListFragment extends Fragment implements LoaderManager.LoaderCallba
 
 
             word = word.trim();
+            translation = translation.trim();
 
 
             EditText myEditText = (EditText) getActivity().findViewById(R.id.etTranslation);

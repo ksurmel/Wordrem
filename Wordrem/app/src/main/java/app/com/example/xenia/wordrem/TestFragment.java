@@ -123,9 +123,12 @@ public class TestFragment extends Fragment {
                         Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(myEditText.getWindowToken(), 0);
 
+                String wordE = wordEd.getText().toString();
+                wordE = wordE.trim();
+
                 switch (button.getText().toString()){
                     case "check":
-                        if (wordEd.getText().toString().compareTo(cursor.getString(1)) == 0) {
+                        if (wordE.compareTo(cursor.getString(1)) == 0) {
 //                                wordEd.setText("");
                             wrong.setText("Right!");
                         } else {
